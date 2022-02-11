@@ -2,6 +2,13 @@
     box-sizing: border-box;
 }
 
+:root {
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 1.75;
+    text-rendering: optimizeSpeed;
+}
+
 body{
     margin: 0;
     padding: 0;
@@ -20,6 +27,18 @@ h1:not([class^=type--var]),h2:not([class^=type--var]), h3:not([class^=type--var]
     text-rendering: optimizeSpeed
 }
 
+button, .a-button, button:visited, button:hover, button:active, button:focus {
+    font-family: sans-serif;
+    font-weight: 400;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeSpeed;
+    text-decoration: none;
+    background: 0 0;
+    border: 0;
+    cursor: pointer;
+}
+
 .h1-line {
     font-size: 3rem;
     line-height: 1.1666666667
@@ -30,6 +49,10 @@ h1:not([class^=type--var]),h2:not([class^=type--var]), h3:not([class^=type--var]
         font-size:clamp(2.25em,5.859375vw,3.75em);
         line-height: 1.2
     }
+}
+
+.bg-blue {
+    background-color: #e8f0fe8a
 }
 
 .grid {
@@ -58,6 +81,10 @@ h1:not([class^=type--var]),h2:not([class^=type--var]), h3:not([class^=type--var]
 
 .gap-top-1{
     margin-top: 1rem;
+}
+
+.gap-top-1-5{
+    margin-top: 1.5rem;
 }
 
 .full-width{
@@ -112,6 +139,10 @@ h1:not([class^=type--var]),h2:not([class^=type--var]), h3:not([class^=type--var]
     .pad-left-2{
         padding-left: 2rem
     }
+}
+
+.d--inline-flex{
+    display: inline-flex;
 }
 
 .hero-card {
